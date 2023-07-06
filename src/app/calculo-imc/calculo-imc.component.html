@@ -1,0 +1,34 @@
+<div class="formulario">
+    <h1>Calcular IMC</h1>
+    <br>
+    <div class="container">
+        <label for="txtSexo">Sexo:</label>
+        <input type="radio" [(ngModel)]="sexo" value="Masc">Masc
+        <input type="radio" [(ngModel)]="sexo" value="Fem">Fem
+    </div>
+
+    <div>
+        <label for="txtIdade">Peso:</label>
+        <input type="text" [(ngModel)]="peso">
+    </div>
+
+    <p>{{peso}}</p>
+
+    <div class="container">
+        <label for="txtAltura">Altura:</label>
+        <input type="text" [(ngModel)]="altura">
+    </div>
+
+    <p>{{altura}}</p>
+
+    <br>
+
+
+    <button (click)="calculaImc()" [disabled]="peso==0 || altura==0">Calcular
+        IMC</button>
+    <h1>{{ imc.toFixed(2) }}</h1>
+    <div *ngIf="imc" class="mostrar">
+        <h1 [ngStyle]="{'color': classificacaoCor}">{{ classificacao }}</h1>
+        <img [src]="retornaImg()" width="50px">
+    </div>
+</div>
