@@ -19,6 +19,7 @@ import { PaiFilhoComponent } from './pai-filho/pai-filho.component';
 import { FilhoPaiComponent } from './filho-pai/filho-pai.component';
 import { ServicesComponent } from './services/services.component';
 import { MenuComponent } from './menu/menu.component';
+import { InvertePipe } from './inverte.pipe';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MenuComponent } from './menu/menu.component';
     PaiFilhoComponent,
     FilhoPaiComponent,
     ServicesComponent,
-    MenuComponent
+    MenuComponent,
+    InvertePipe
   ],
   imports: [
     BrowserModule,

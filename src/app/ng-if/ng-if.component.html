@@ -1,1 +1,13 @@
-<p>ng-if works!</p>
+<h1>Exemplo ngIf</h1>
+<div class="container">
+    <h1 *ngIf="usuarioLogado">Bem-vindo, Carls!</h1>
+    <p *ngIf="usuarioLogado">Gostaria de ver seus dados?</p>
+    <button class="vizualizar" *ngIf="usuarioLogado" (click)="clickDados()">Ver</button>
+    <ul *ngIf="usuarioDados">
+        <li>Nome:Carls</li>
+        <li>CPF:123.456.789-00</li>
+        <li>Telefone:(11) 9876-5432</li>
+    </ul>
+</div>
+<hr>
+<button class="botao" (click)="clickLogar()">Logar</button>

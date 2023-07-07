@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-switch.component.scss']
 })
 export class NgSwitchComponent {
+  animal: string;
 
+  constructor() {
+    this.animal = "";
+  }
 }

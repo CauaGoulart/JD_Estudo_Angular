@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class NgForComponent {
 
+  listaDados: number[] = [];
+  resultadoLancamento: number | null = null;
+
+  public lancarDados() {
+    const resultado = Math.floor(Math.random() * 20) + 1;
+    this.listaDados.push(resultado);
+    this.resultadoLancamento = resultado;
+  }
+
+  public removeDado(){
+    this.listaDados.pop();
+  }
 }

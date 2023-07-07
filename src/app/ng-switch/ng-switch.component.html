@@ -1,1 +1,35 @@
-<p>ng-switch works!</p>
+<div class="container">
+  <h1>Exemplo ngSwitch</h1>
+
+  <div [ngSwitch]="animal">
+    <div *ngSwitchCase="'gato'">
+      <img
+        src="https://images.unsplash.com/photo-1600272008408-6e05d5aa3e7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2F0b3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+        alt="Img Gato">
+      <h3>Gato</h3>
+      <p>O favorito de muitos.</p>
+    </div>
+    <div *ngSwitchCase="'cachorro'">
+      <img src="https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg" alt="Img Cachorro">
+      <h3>Cachorro</h3>
+      <p>O melhor amigo do homem.</p>
+    </div>
+    <div *ngSwitchCase="'peixe'">
+      <img
+        src="https://www.thesprucepets.com/thmb/DapWRwPTgyQDwPk8BI-85Wh-Amg=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1253300574-a5ca41b3d423428a8202421d052fb5c5.jpg"
+        alt="Img Peixe">
+      <h3>Peixe</h3>
+      <p>Um bom ouvinte.</p>
+    </div>
+    <div *ngSwitchDefault>
+      <h3>Nenhum animal selecionado</h3>
+      <p>Escolha um animal da lista</p>
+    </div>
+  </div>
+
+  <select [(ngModel)]="animal">
+    <option value="gato">Gato</option>
+    <option value="cachorro">Cachorro</option>
+    <option value="peixe">Peixe</option>
+  </select>
+</div>

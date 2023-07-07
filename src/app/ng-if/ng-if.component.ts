@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class NgIfComponent {
 
+  usuarioLogado:boolean = false;
+  usuarioDados:boolean = false;
+
+  public clickLogar(){
+    this.usuarioLogado = !this.usuarioLogado;
+  }
+
+  public clickDados(){
+    this.usuarioDados = !this.usuarioDados;
+  }
+
 }

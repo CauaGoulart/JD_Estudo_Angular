@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes.component.scss']
 })
 export class PipesComponent {
-
+  public data: Date = new Date();
+  public nome: string = "Fulano de Tal";
+  public valor: number = 12345.67;
+  public valorDecimal: number = 3.14159265358979323846
+  public porcentagem : number = 0.50
+  public palavra: string = "";
 }
