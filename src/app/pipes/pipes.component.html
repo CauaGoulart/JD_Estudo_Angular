@@ -1,34 +1,41 @@
 <h1>Exemplo-Pipes</h1>
 
+<div class="box">
 <h3>Pipe para data </h3>
 <p>SEM: {{data}}</p>
 <p>COM: {{data | date:'dd-MM-yyyy'}}</p>
-<hr>
+</div>
 
+
+<div class="box">
 <h3>Pipe para Texto </h3>
 <p>Normal: {{nome}}</p>
 <p>Maiúscula: {{nome | uppercase}}</p>
 <p>Minúscula: {{nome | lowercase}}</p>
-<hr>
+</div>
 
+<div class="box">
 <h3>Pipe para Valor </h3>
 <p>Normal: {{valor}}</p>
 <p>Real: {{valor | currency : 'BRL'}}</p>
 <p>Para formatar decimais é necessário configurar LOCALE em app.module.ts</p>
-<hr>
+</div>
 
+<div class="box">
 <h3>Pipe para Valor Decimal</h3>
 <p>Equação: 13/5</p>
 <p>Decimal com duas casas decimais: {{ 13 / 5 | number:'1.2-2' }}</p>
-<hr>
+</div>
 
+<div class="box">
 <h3>Pipe para Porcentagem</h3>
 <p>Normal: {{ porcentagem }}</p>
 <p>Porcentagem com duas casas decimais: {{ porcentagem | percent:'1.2-2' }}</p>
-<hr>
+</div>
 
+<div class="box">
 <h3>Pipe própria (inverter uma string)</h3>
 <p>Criar a pipe <b><i>'ng generate pipe inverte' </i></b></p>
 <input type="text" [(ngModel)]="palavra">
 <div class="container"><p class="destaque">{{palavra | inverte}}</p></div>
-<hr>
+</div>
