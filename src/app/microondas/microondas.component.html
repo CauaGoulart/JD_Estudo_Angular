@@ -1,1 +1,25 @@
-<p>microondas works!</p>
+<div class="microwave">
+
+    <div class="storage">
+
+    </div>
+
+    <div class="interface">
+
+        <div class="screan">
+            <h2 [ngClass]="{'hidden': finished == true}">{{ timer * 1000| date: 'mm:ss' }}</h2>
+            <h2 *ngIf="finished">Pronto</h2>
+        </div>
+
+        <div class="numeric-buttons">
+            <button *ngFor="let number of numbers" (click)="addDigit(number)">{{ number }}</button>
+            <button (click)="add30s()">+30s</button>
+            <button (click)="add1m()">+1m</button>
+            <button (click)="startTimer()" [disabled]="timer==0" class="start">Ligar</button>
+            <button (click)="stopTimer()" class="stop">Pausar</button>
+            <button (click)="clearTimer()" class="clear">Limpar</button>
+        </div>
+
+
+    </div>
+</div>
