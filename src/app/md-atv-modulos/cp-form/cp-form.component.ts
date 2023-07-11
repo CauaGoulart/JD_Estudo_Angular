@@ -10,12 +10,9 @@ export class CpFormComponent {
 
   constructor(private service: AtvServiceService) { }
 
-  public addMed(valor: string) {
+  public addMed(valor: string,numero: number) {
     return this.service.adicionaNome(valor);
-  }
-
-  public addVal(valor: number) {
-    return this.service.adicionaValor(valor);
+    return this.service.adicionaValor(numero);
   }
 
 }
