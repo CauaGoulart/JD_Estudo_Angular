@@ -23,11 +23,8 @@ export class AtvServiceService {
   }
   
 
-  public adicionaNome(valor: string){
+  public adicionaMedicamento(valor: string,numero:number){
     this.medicamento.nome = valor;
-  }
-
-  public adicionaValor(numero: number){
     this.medicamento.valor = numero;
   }
 
