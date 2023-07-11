@@ -15,11 +15,13 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { MicroondasComponent } from './microondas/microondas.component';
-import { PaiFilhoComponent } from './pai-filho/pai-filho.component';
 import { FilhoPaiComponent } from './filho-pai/filho-pai.component';
-import { ServicesComponent } from './services/services.component';
 import { MenuComponent } from './menu/menu.component';
 import { InvertePipe } from './inverte.pipe';
+import { MdPaiFilhoModule } from './md-pai-filho/md-pai-filho.module';
+import { MdFilhoPaiModule } from './md-filho-pai/md-filho-pai.module';
+import { MdServiceModule } from './md-service/md-service.module';
+import { MdAtvModulosModule } from './md-atv-modulos/md-atv-modulos.module';
 
 @NgModule({
   declarations: [
@@ -35,16 +37,19 @@ import { InvertePipe } from './inverte.pipe';
     NgSwitchComponent,
     PipesComponent,
     MicroondasComponent,
-    PaiFilhoComponent,
     FilhoPaiComponent,
-    ServicesComponent,
     MenuComponent,
     InvertePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MdPaiFilhoModule,
+    MdFilhoPaiModule,
+    MdServiceModule,
+    MdAtvModulosModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

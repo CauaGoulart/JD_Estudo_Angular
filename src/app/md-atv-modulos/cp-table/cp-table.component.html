@@ -1,0 +1,11 @@
+<table border="1" cellSpacing="0" width="30%">
+  <tr>
+    <td><b>Medicamento</b></td>
+    <td><b>Valor</b></td>
+  </tr>
+
+  <tr *ngFor="let valor of medicamento; let i = index">
+    <td>{{medicamento.nome}}</td>
+    <td>{{medicamento.valor}}</td>
+  </tr>
+</table>
