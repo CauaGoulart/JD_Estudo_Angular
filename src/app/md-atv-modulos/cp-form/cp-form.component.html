@@ -1,10 +1,10 @@
 <h1>Formulario - Cadastro</h1>
 <div>
-    <input type="text" #inputNome>
+    <input [(ngModel)]="nome" type="text" #inputNome>
 </div>
 
 <div>
-    <input type="number" #inputValor>
+    <input [(ngModel)]="valor" type="number" #inputValor>
 </div>
 
-<button (click)="addMed(inputNome.value,inputValor.value)">Adiciona Item</button>
+<button (click)="addMed(inputNome.value, parseValor(inputValor.value))">Adiciona Item</button>

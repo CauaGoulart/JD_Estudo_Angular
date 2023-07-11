@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AtvServiceService } from '../services/atv-service.service';
 
 @Component({
@@ -6,23 +6,13 @@ import { AtvServiceService } from '../services/atv-service.service';
   templateUrl: './cp-table.component.html',
   styleUrls: ['./cp-table.component.scss']
 })
-export class CpTableComponent {
-  private medicamento = {
-    nome: "",
-    valor: 0
-  }
+export class CpTableComponent implements OnInit {
 
-  public nome:string ="";
-  public valor:number = 0;
+  public medicamentos: any[] = [];
 
   constructor(private service: AtvServiceService) { }
 
-  
-
   ngOnInit(): void {
-    this.medicamento.nome = this.service.getNome();
-    this.medicamento.valor = this.service.getValor();
-    
+    this.medicamentos = this.service.getMedicamentos();
   }
-
 }

@@ -9,9 +9,15 @@ import { AtvServiceService } from '../services/atv-service.service';
 export class CpFormComponent {
 
   constructor(private service: AtvServiceService) { }
+  public nome: string = "";
+  public valor: number = 0;
 
-  public addMed(valor: string,numero: number) {
-    return this.service.adicionaMedicamento(valor,numero);
+  public addMed(nome: string, valor: number) {
+    this.service.adicionaMedicamento(nome, valor);
+  }
+
+  public parseValor(valor: string): number {
+    return parseFloat(valor);
   }
 
 }

@@ -7,25 +7,18 @@ export class AtvServiceService {
 
   public emitEvent = new EventEmitter();
 
-  private medicamento = {
-    nome: "",
-    valor: 0
+  private medicamentos: any[] = [];
+
+  public adicionaMedicamento(nome: string, valor: number) {
+    const medicamento = {
+      nome: nome,
+      valor: valor
+    };
+    this.medicamentos.push(medicamento);
   }
 
-  public getNome(){
-    return this.medicamento.nome;
-    
-  }
-
-  public getValor(){
-    return this.medicamento.valor;
-    
-  }
-  
-
-  public adicionaMedicamento(valor: string,numero:number){
-    this.medicamento.nome = valor;
-    this.medicamento.valor = numero;
+  public getMedicamentos() {
+    return this.medicamentos;
   }
 
   constructor() { }
