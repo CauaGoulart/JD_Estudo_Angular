@@ -14,5 +14,10 @@ export class CpTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.medicamentos = this.service.getMedicamentos();
+    console.log(this.medicamentos)
+  }
+
+  public selecionarMedicamento(medicamento: any) {
+    this.service.setMedicamentoSelecionado(medicamento);
   }
 }

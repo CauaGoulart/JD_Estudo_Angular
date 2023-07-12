@@ -6,14 +6,21 @@ import { AtvServiceService } from '../services/atv-service.service';
   templateUrl: './cp-form.component.html',
   styleUrls: ['./cp-form.component.scss']
 })
-export class CpFormComponent {
+export class CpFormComponent implements OnInit{
 
-  constructor(private service: AtvServiceService) { }
   public nome: string = "";
   public valor: number = 0;
+  public medicamentos: any[] = [];
+
+   constructor(private service: AtvServiceService) { }
+
+   ngOnInit(): void {
+    this.medicamentos = this.service.getMedicamentoSelecionado();
+  }
 
   public addMed(nome: string, valor: number) {
     this.service.adicionaMedicamento(nome, valor);
+    this.medicamentos = this.service.getMedicamentoSelecionado();
   }
 
   public parseValor(valor: string): number {

@@ -7,5 +7,6 @@
   <tr *ngFor="let medicamento of medicamentos">
     <td>{{ medicamento.nome }}</td>
     <td>{{ medicamento.valor }}</td>
+    <td><button (click)="selecionarMedicamento(medicamento)">Selecionar</button></td>
   </tr>
 </table>
