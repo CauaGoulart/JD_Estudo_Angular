@@ -1,15 +1,12 @@
-<h1>Formulario - Cadastro</h1>
-<div>
-    <input [(ngModel)]="nome" type="text" #inputNome>
+<h2>Formulário</h2>
+<div class="espacamento">
+    <label for="nome">Nome:</label>
+    <input id="nome" [(ngModel)]="nome">
 </div>
-
 <div>
-    <input [(ngModel)]="valor" type="number" #inputValor>
+    <label for="preco" style="margin-right: 13px;">Preço:</label>
+    <input id="preco" class="inputPreco" [(ngModel)]="preco">
 </div>
-
-<!-- <div *ngIf="medicamento">
-    <h2>{{ medicamento.nome }}</h2>
-    <p>Valor: {{ medicamento.valor }}</p>
-  </div> -->
-
-<button (click)="addMed(inputNome.value, parseValor(inputValor.value))">Adiciona Item</button>
+<div>
+    <button (click)="addMedicamento()">Cadastrar</button>
+</div>

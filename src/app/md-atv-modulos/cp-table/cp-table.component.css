@@ -1,0 +1,22 @@
+table, th, tr, td{
+    border: 2px solid #8a4e9c;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+table{
+    width: 300px;
+}
+
+th{
+    color: #8a4e9c;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #e1b9ee;
+}
+
+.colunaPreco{
+    text-align: center;
+}

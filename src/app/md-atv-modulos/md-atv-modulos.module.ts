@@ -5,20 +5,18 @@ import { CpTableComponent } from './cp-table/cp-table.component';
 import { CpTelaComponent } from './cp-tela/cp-tela.component';
 import { FormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   declarations: [
     CpFormComponent,
     CpTableComponent,
     CpTelaComponent
   ],
+  exports:[
+    CpTelaComponent
+  ],
   imports: [
     CommonModule,
     FormsModule
-  ],
-  exports:[
-    CpTelaComponent
   ]
 })
 export class MdAtvModulosModule { }

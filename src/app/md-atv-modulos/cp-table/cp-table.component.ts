@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { AtvServiceService } from '../services/atv-service.service';
+import { ServiceService } from '../services/service.service';
 
 @Component({
   selector: 'app-cp-table',
   templateUrl: './cp-table.component.html',
-  styleUrls: ['./cp-table.component.scss']
+  styleUrls: ['./cp-table.component.css']
 })
-export class CpTableComponent implements OnInit {
+export class CpTableComponent implements OnInit{
 
-  public medicamentos: any[] = [];
+  public medicamentos: Array<any> = [];
 
-  constructor(private service: AtvServiceService) { }
+  constructor(private service: ServiceService) {}
 
   ngOnInit(): void {
-    this.medicamentos = this.service.getMedicamentos();
-    console.log(this.medicamentos)
+    this.medicamentos = this.service.getLista();
   }
 
-  public selecionarMedicamento(medicamento: any) {
+  public setMedicamentoSelecionado(medicamento: any) {
     this.service.setMedicamentoSelecionado(medicamento);
   }
 }

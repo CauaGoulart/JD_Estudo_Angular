@@ -1,12 +1,10 @@
-<table border="1" cellspacing="0" width="30%">
-  <tr>
-    <td><b>Medicamento</b></td>
-    <td><b>Valor</b></td>
-  </tr>
-
-  <tr *ngFor="let medicamento of medicamentos">
-    <td>{{ medicamento.nome }}</td>
-    <td>{{ medicamento.valor }}</td>
-    <td><button (click)="selecionarMedicamento(medicamento)">Selecionar</button></td>
-  </tr>
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+    </tr>
+    <tr *ngFor="let medicamento of medicamentos" (click)="setMedicamentoSelecionado(medicamento)">
+        <td>{{medicamento.nome}}</td>
+        <td class="colunaPreco">{{medicamento.preco}}</td>
+    </tr>
 </table>

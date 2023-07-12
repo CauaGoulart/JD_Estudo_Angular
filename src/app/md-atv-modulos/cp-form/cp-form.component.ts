@@ -1,30 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-import { AtvServiceService } from '../services/atv-service.service';
+import { ServiceService } from '../services/service.service';
 
 @Component({
   selector: 'app-cp-form',
   templateUrl: './cp-form.component.html',
-  styleUrls: ['./cp-form.component.scss']
+  styleUrls: ['./cp-form.component.css']
 })
 export class CpFormComponent implements OnInit{
 
   public nome: string = "";
-  public valor: number = 0;
-  public medicamentos: any[] = [];
+  public preco: number = 0;
 
-   constructor(private service: AtvServiceService) { }
+  constructor(private service: ServiceService) {}
 
-   ngOnInit(): void {
-    this.medicamentos = this.service.getMedicamentoSelecionado();
+  public addMedicamento() {
+    const novoMedicamento = {nome: this.nome, preco: this.preco};
+    this.service.adiciona(novoMedicamento);
+    this.limparFormulario();
   }
 
-  public addMed(nome: string, valor: number) {
-    this.service.adicionaMedicamento(nome, valor);
-    this.medicamentos = this.service.getMedicamentoSelecionado();
+  public limparFormulario() {
+    this.nome = "";
+    this.preco = 0;
   }
 
-  public parseValor(valor: string): number {
-    return parseFloat(valor);
+  ngOnInit(): void {
+    this.service.medicamentoSelecionado.subscribe(medicamento => {
+      this.nome = medicamento.nome;
+      this.preco = medicamento.preco;
+    });
   }
-
 }
