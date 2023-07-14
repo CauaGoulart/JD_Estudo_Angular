@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Conversor de Moedas</h1>
+    <div>
+        <label for="cep">Valor R$:</label>
+        <input type="text" id="cep" name="cep" [(ngModel)]="valor" (input)="buscarValor()">
+    </div>
+    <app-tables-conversor [valoresConvertido]="valoresConvertido"></app-tables-conversor>
+</div>

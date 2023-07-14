@@ -22,6 +22,8 @@ import { MdPaiFilhoModule } from './md-pai-filho/md-pai-filho.module';
 import { MdFilhoPaiModule } from './md-filho-pai/md-filho-pai.module';
 import { MdServiceModule } from './md-service/md-service.module';
 import { MdAtvModulosModule } from './md-atv-modulos/md-atv-modulos.module';
+import { AgrupadorModule } from './agrupador/agrupador.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { MdAtvModulosModule } from './md-atv-modulos/md-atv-modulos.module';
     MdPaiFilhoModule,
     MdFilhoPaiModule,
     MdServiceModule,
-    MdAtvModulosModule
+    MdAtvModulosModule,
+    AgrupadorModule,
+    HttpClientModule
     
   ],
   providers: [],

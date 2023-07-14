@@ -13,6 +13,7 @@ import { CpPaiComponent } from './md-pai-filho/cp-pai/cp-pai.component';
 import { CpPaiComponent as CpPaiComponent2 } from './md-filho-pai/cp-pai/cp-pai.component';
 import { CpAgrupadorComponent } from './md-service/cp-agrupador/cp-agrupador.component';
 import { CpTelaComponent } from './md-atv-modulos/cp-tela/cp-tela.component';
+import { ConversorComponent } from './agrupador/conversor/conversor.component';
 
 const routes: Routes = [
   { path: "exemploBindings", component: ExemploBindingComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: "filho-pai", component: CpPaiComponent2},
   { path: "service", component: CpAgrupadorComponent},
   { path: "ng-model", component: CpTelaComponent},
+  { path: "apicon", component: ConversorComponent},
 
 ];
 
