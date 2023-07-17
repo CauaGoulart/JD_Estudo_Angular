@@ -42,8 +42,4 @@ export class ConversorComponent {
       };
     });
   }
-  
-  
-
-//bcdcdd34
 }
