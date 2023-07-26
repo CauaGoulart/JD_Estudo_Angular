@@ -1,3 +1,16 @@
+.tela {
+    position: relative;
+    width: 1600px;
+    height: 500px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .bus-container {
+    position: absolute;
+  }
+  
+
 .caixa{
     color: white;
     width: 300px;

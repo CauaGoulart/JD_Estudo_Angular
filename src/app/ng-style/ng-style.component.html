@@ -1,6 +1,12 @@
 <h1>Exemplo ngStyle</h1>
-
-<img src="https://static.vecteezy.com/system/resources/thumbnails/008/492/138/small/back-to-school-bag-pack-illustration-cartoon-png.png" class="caixa" [ngStyle]="{ 'margin-left': larguraStr }">
-<hr>
-<button (click)="aumenta()">Aumenta +</button>
-<button (click)="diminui()">Diminui -</button>
+<div class="tela">
+    <div class="bus-container" [ngStyle]="{ 'left': larguraStr, 'top': alturaStr }">
+        <img src="https://cdn-icons-png.flaticon.com/512/5566/5566691.png"
+            class="caixa">
+    </div>
+    <hr>
+</div>
+<button (click)="aumentaCima()">Cima</button>
+<button (click)="diminuiBaixo()">Baixo</button>
+<button (click)="aumentaDireita()">Direita</button>
+<button (click)="diminuiEsquerda()">Esquerda</button>
