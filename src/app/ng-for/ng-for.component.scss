@@ -1,26 +1,62 @@
-.resultado{
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-top: 20px;
+.container {
+  width: 60%;
+  margin: 20px auto;
 }
 
-.resultado h2 {
-  font-size: 18px;
-  color: #333;
-}
-
-.dadosTabela{
-    text-align: center;
+h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+  background-color: #333333;
+  padding-left: 25px;
+  margin: auto;
+  text-align: center;
 }
 
 button {
-  display: inline-block;
-  padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 5px;
+  color: white;
   cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #048c5b;
+}
+
+.resultado {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resultado h2 {
+  font-size: 24px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+td.dadosTabela {
+  font-weight: bold;
+  background-color: #04aa6d;
+  color: white;
 }

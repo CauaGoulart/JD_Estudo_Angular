@@ -1,21 +1,22 @@
-table, th, tr, td{
-    border: 2px solid black;
+table {
+    width: 100%;
+    margin-top: 20px;
     border-collapse: collapse;
-    margin: auto;
-    margin-top: 30px;
-    padding: 5px;
-}
-
-table{
-    width: 300px;
-}
-
-th{
-    color: black;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.colunaPreco{
-    text-align: center;
-}
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  table th {
+    font-size: 18px;
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  table td.colunaPreco {
+    text-align: right;
+  }
+  

@@ -1,12 +1,14 @@
-<div>N1: {{n1}}</div>
-<div>N2: {{n2}}</div>
-<div>Soma de {{n1}} com {{n2}} = {{n1+n2}}</div>
-<button (click)="alteraValores()">Alterar</button>
-<button (click)="diminuiN1()" [disabled]="n1==0">Diminui N1</button>
-<div>
+<div class="container">
+  <div class="info">N1: {{ n1 }}</div>
+  <div class="info">N2: {{ n2 }}</div>
+  <div class="info">Soma de {{ n1 }} com {{ n2 }} = {{ n1 + n2 }}</div>
+  <button class="action" (click)="alteraValores()">Alterar</button>
+  <button class="action" (click)="diminuiN1()" [disabled]="n1 == 0">Diminui N1</button>
+  <div>
     <img [src]="retornaImg()" width="200px">
-</div>
-<div>
+  </div>
+  <div class="input-section">
     <input type="text" [(ngModel)]="texto">
-    <h1>{{texto}}</h1>
+    <h1>{{ texto }}</h1>
+  </div>
 </div>

@@ -1,12 +1,37 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 320px;
-    margin: auto;
-    margin-top: 15px;
-  }
-  
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  background: #333333;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333333;
+}
+

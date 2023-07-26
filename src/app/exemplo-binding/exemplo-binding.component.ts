@@ -12,7 +12,7 @@ export class ExemploBindingComponent {
 
   public retornaImg():string{
     if(this.n1 > 0){
-    return "https://static.vecteezy.com/ti/vetor-gratis/p1/1839422-cara-de-emoji-feliz-gratis-vetor.jpg";
+    return "https://www.pngall.com/wp-content/uploads/5/Emoticon-PNG.png";
     }
     else{
       return "https://imagepng.org/wp-content/uploads/2017/10/facebook-triste-emoji-icone-1.png";

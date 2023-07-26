@@ -1,22 +1,24 @@
-<h1>Exemplo ngFor</h1>
+<div class="container">
+  <h1>Exemplo ngFor</h1>
 
-<button (click)="lancarDados()">Jogar Dados</button>
-<button (click)="removeDado()">Remover Dados</button>
-<br>
+  <button (click)="lancarDados()">Jogar Dados</button>
+  <button (click)="removeDado()">Remover Dados</button>
+  <br>
 
-<div class="resultado" *ngIf="resultadoLancamento !== null">
-  <h2>Resultado do Lançamento: {{ resultadoLancamento }}</h2>
+  <div class="resultado" *ngIf="resultadoLancamento !== null">
+    <h2>Resultado do Lançamento: {{ resultadoLancamento }}</h2>
+  </div>
+
+  <hr>
+
+  <table border="1" cellSpacing="0" width="30%">
+    <tr>
+      <td class="dadosTabela"><b>Dado</b></td>
+      <td class="dadosTabela"><b>Resultado</b></td>
+    </tr>
+    <tr *ngFor="let dado of listaDados; let i = index">
+      <td>Dado {{ i + 1 }}</td>
+      <td>{{ dado }}</td>
+    </tr>
+  </table>
 </div>
-
-<hr>
-
-<table border="1" cellSpacing="0" width="30%">
-  <tr>
-    <td class="dadosTabela"><b>Dado</b></td>
-    <td class="dadosTabela"><b>Resultado</b></td>
-  </tr>
-  <tr *ngFor="let dado of listaDados; let i = index">
-    <td>Dado {{ i + 1 }}</td>
-    <td>{{ dado }}</td>
-  </tr>
-</table>

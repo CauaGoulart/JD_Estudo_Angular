@@ -1,26 +1,78 @@
-  .botao{
-    background-color: black;
-    border-radius: 15px;
-    font-size: 20px;
-    color: gold;
-    padding: 10px;
-    cursor: pointer;
-    margin: 5px;
-  }
+.container {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  background: #333333;
+}
 
- .container{
-  background-color: rgb(124, 238, 134);
-  width: fit-content;
-  border-radius: 15px;
-  padding: 10px;
- }
+h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bolder;
+  padding-left: 18px;
+  margin-top: 0;
+  line-height: 54px;
+  background-color: #333333;
+  border-radius: 10px 10px 0 0;
+}
 
- .vizualizar{
-  background-color: rgb(124, 238, 134);
-    border-radius: 15px;
-    font-size: 15px;
-    color: black;
-    padding: 10px;
-    cursor: pointer;
-    margin: 5px;
- }
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #048c5b;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.container p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+}
+
+.vizualizar {
+  background-color: #333333;
+}
+
+.vizualizar:hover {
+  background-color: #444444;
+}
+
+.botao {
+  background-color: #ff6347;
+}
+
+.botao:hover {
+  background-color: #e74c3c;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  font-size: 18px;
+  color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}

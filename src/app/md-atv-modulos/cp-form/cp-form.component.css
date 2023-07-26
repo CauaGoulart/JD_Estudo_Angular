@@ -1,0 +1,43 @@
+h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .espacamento {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  input {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333333;
+  }
+  
+  input.inputPreco {
+    width: 100px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #048c5b;
+  }
+  
